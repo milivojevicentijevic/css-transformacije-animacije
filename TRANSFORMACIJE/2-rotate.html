@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        .box {
+            width: 250px;
+            height: 250px;
+            background: red;
+            font-size: 40px;
+            text-align: center;
+            line-height: 250px;
+            transform: translate(50px, 100px);
+            transition-duration: .5s;
+        }
+        .box:hover {
+            /* transform: rotate(45deg);
+            transform: rotate(90deg); */
+            transform: rotate(360deg);
+            transform: rotateX(90deg);
+            transform: rotateY(90deg);
+            transform: rotateZ(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">ROTATE</div>
+</body>
+</html>

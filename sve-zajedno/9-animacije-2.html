@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        .box {
+            width: 200px;
+            background-color: yellow;
+            text-align: center;
+            padding: 15px;
+            border: 1px solid black;
+            margin: 50px auto;
+            animation: animacija 6s ease 0s 2 normal backwards;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animacija - name - animacije */
+            /* 6s - duration - vreme za koje ce se izvrsiti ciklus animacija */
+            /* ease - timing-function */
+            /* 0s - delay - odlaganje pocetka naimacije (kasnjenje) */
+            /* 2 - iteration-count - broj izvrsenja animacije */
+            /* normal - direction - smer animacije */
+            /* backwards - fill-mode */
+        }
+        @keyframes animacija {
+            0% {
+                background-color: white;
+            }
+            25% {
+                background-color:yellow;
+                transform: scale(1.2);
+            }
+            50% {
+                background-color: orange;
+                transform: scale(1.4);
+            }
+            75% {
+                background-color: red;
+                transform: scale(1.6);
+            }
+            100% {
+                background-color: violet;
+                transform: scale(1.8);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Svojstvo TRANSFORM</h1>
+    <hr>
+    <ol>
+        <li>SCALE - menjanje velicine elementa</li>
+        <li>ROTATE - rotiranje</li>
+        <li>SKEW - iskosavanje</li>
+        <li>TRANSLATE - pomeranje</li>
+    </ol>
+    <hr>
+    <div class="box">ANIMACIJE 2</div>
+</body>
+</html>

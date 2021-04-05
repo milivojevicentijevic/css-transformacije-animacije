@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            background-color: lightgray;
+            border: 1px solid black;
+            animation-name: animacija;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes animacija {
+            0% {
+                opacity: 0;
+                opacity: 1;
+                background-color: red;
+            }
+            25% {
+                opacity: 1;
+                opacity: 0;
+                background-color: blue;
+            }
+            50% {
+                opacity: 0;
+                opacity: 1;
+                background-color: green;
+            }
+            75% {
+                opacity: 1;
+                opacity: 0;
+                background-color: orange;
+            }
+            100% {
+                opacity: 0;
+                opacity: 1;
+                background-color: violet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Animacija</h1>
+    </div>
+</body>
+</html>
