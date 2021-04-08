@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacije</title>
+    <style>
+        .box {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 75px;
+            height: 75px;
+            background-color: red;
+            animation-name: animacija;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+        }
+        @keyframes animacija {
+            0% {
+                left: 0;
+                top: 0;
+            }
+            25% {
+                left: 0;
+                top: calc(100% - 75px);
+            }
+            50% {
+                top: calc(100% - 75px);
+                left: calc(100% - 75px);
+            }
+            75% {
+                left: calc(100% - 75px);
+                top: 0;
+            }
+            100% {
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
